@@ -1,5 +1,5 @@
 module.exports = function (Homework) {
-  const {add, less} = Homework;
+  const { AsyncArray, add, subtract, multiply, divide, less, equal, lessOrEqual } = Homework;
   return async function (array, fn, initialValue, cb) {
     const asyncArrayGet = (idx) => new Promise(resolve => {
       asyncArray.get(idx, number => resolve(number) )
